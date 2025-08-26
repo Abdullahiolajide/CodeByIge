@@ -24,6 +24,15 @@ body {
 .btn-bg{
   background-color: var(--highlight);
 }
+.liquid-glass{
+  backdrop-filter: blur(3px);
+  filter: url(#glass-distortion);
+  isolation: isolate;
+  background: #ffffff40;
+  inset: 0;
+  box-shadow: inset 2px 2px 1px #ffffff80, inset -1px -1px 1px 1px #ffffff80;
+}
+
 
 @media screen and (max-width: 1200px) {
   .flex-1{
@@ -44,6 +53,9 @@ body {
   }
   .rtop{
     margin-top: 30px;
+  }
+  .nmt{
+    margin-top: 500px;
   }
 }
 
