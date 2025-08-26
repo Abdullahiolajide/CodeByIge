@@ -3,24 +3,47 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --highlight: #0DB760;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+body {
+  font-family: Plus Jakarta Sans, Plus Jakarta Sans Fallback;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition-duration: 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.text-highlight{
+  color: var(--highlight);
+}
+.btn-bg{
+  background-color: var(--highlight);
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-1{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  .position-1{
+    position: relative;
+    margin-top: 40px;
+  }
+  .text-1{
+    text-align: center;
+  }
+  .align-1{
+    width: fit-content;
+    margin: auto;
+  }
+  .rtop{
+    margin-top: 30px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
