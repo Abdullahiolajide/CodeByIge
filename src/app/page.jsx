@@ -128,8 +128,8 @@ export default function Home(){
         </div>
       
       </section>
-      <section className="mb-50 max-w-6xl mx-auto px-6">
-        <div className="text-5xl text-center">Checkout My <span className="text-highlight">Projects</span></div>
+      <section className="mb-50 max-w-6xl mx-auto px-6 mt-32 md:mt-64">
+        <div className="text-4xl md:text-5xl text-center">Checkout My <span className="text-highlight">Projects</span></div>
         <div className="mt-10 grid grid-cols md:grid-cols-2 md:w-3xl lg:w-4xl gap-7 mx-auto">
 
           {projects.map((project, i)=>(
