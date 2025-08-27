@@ -12,6 +12,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         highlight: "var(--highlight)",
+        invert: "var(--invert)",
       },
 
     },

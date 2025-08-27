@@ -6,19 +6,19 @@ import Image from "next/image"
 const ProjectCard = ({name, imageUrl, description, link}) => {
   return (
     <div className="w-full md:w-x mx-auto ">
-        <div className="border border-gray-300 p-5 rounded-3xl space-y-3">
+        <div className="p-card p-5 rounded-3xl space-y-3">
             <Image 
                 src={imageUrl}
                 alt=""
                 width={600}
                 height={400}
-                className="rounded-3xl border border-5 border-t-14 border-b-14 border-gray-200"
+                className="rounded-3xl border border-5 border-gray-200"
             />
 
             <p className="px-2 text-xl md:text-3xl font-medium">{name}</p>
             <p className="px-2 text-gray-500">{description}</p>
             <a href={link}>
-                <button className="flex items-center mx-2 mt-2 py-3 px-3 cursor-pointer w-32 hover:w-34 hover:bg-gray-300 duration-300 bg-gray-200 font-medium rounded-xl">Live Demo <span className="ml-auto ">
+                <button className="flex items-center mx-2 mt-2 py-3 px-3 cursor-pointer w-32 hover:w-34 demo-btn duration-300 font-medium rounded-xl">Live Demo <span className="ml-auto ">
                 {/* <IoMdOpen />  */}
                 <IoIosArrowForward />
                 </span>

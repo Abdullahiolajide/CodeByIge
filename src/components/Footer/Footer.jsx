@@ -5,7 +5,7 @@ import { MdOutlineMail } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="mb-30">
-        <div className="w-sm md:w-2xl mx-auto border-t border-gray-300"></div>
+        <div className="w-xs md:w-2xl mx-auto border-t border-gray-300"></div>
         {/* <hr className="border"/> */}
         <p className="text-center text-sm text-gray-400 mt-10">Copyright © 2025 Ige Abdullahi.</p>
         <div className="flex justify-around w-50 text-gray-600 mt-5 mx-auto text-xl">
